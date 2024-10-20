@@ -24,6 +24,7 @@ class AuthService private constructor(context: Context) {
     }
 
     init {
+        // DEBUG: clear all preferences
         val editor = preferences.edit()
         editor.clear()
         editor.apply()
